@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Modal</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <button id="nav-wallet">Click me</button>
+    <div class="modal-bg">
+      <section class="modal">
+        <div class="head">
+          <div class="content">
+            <i class="bx bxs-wallet"></i>
+            <h2>Select a Wallet</h2>
+          </div>
+          <div class="close">
+            <i class="bx bx-x"></i>
+          </div>
+        </div>
+        <div class="wallet">
+          <span> Please select a wallet to connect to this dapp </span>
+          <section class="wallet-link">
+            <button class="metamask">
+              <img src="image/meta.svg" alt="metamask logo" />
+              <h3>MetaMask</h3>
+            </button>
+
+            <button class="trust">
+              <img src="image/trust.svg" alt="metamask logo" />
+              <h3>Trust</h3>
+            </button>
+            <button class="walletconnect">
+              <img src="image/walletconnect.svg" alt="metamask logo" />
+              <h3>WalletConnect</h3>
+              <!-- <div class="loader"></div> -->
+            </button>
+          </section>
+        </div>
+        <footer>
+          <div class="footer-top">
+            <a href="#">What is a wallet?</a>
+            <div class="close">Dismiss</div>
+          </div>
+          <p>Powered by Blocknative</p>
+        </footer>
+
+        <!-- <svg>
+            <circle cx="70" cy="70" r="70"></circle>
+        </svg> -->
+      </section>
+    </div>
+
+    <div class="errBg">
+      <section class="set">
+        <div class="close">
+          <i class="bx bx-x"></i>
+        </div>
+        <h1>You can't check-in automatically</h1>
+        <a href="#" class="btn btn-primary">check-in manually</a>
+      </section>
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
+</html>

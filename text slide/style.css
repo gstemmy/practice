@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: #444;
+}
+.main .slider{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.main .slider .slides{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    opacity: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease-in-out;
+    transition-delay: 0.3s;
+    z-index: -1;
+}
+/* .main .slider .slides.current{ */
+.main .slider .slides.current{
+    opacity: 1;
+    z-index: 1;
+}
+.main .slider .slides h1{
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 750;
+    text-shadow: opx 0.5px 15px rgba(0, 0, 0, 0.5);
+    margin-left: -500%;
+    transition: 0.3s linear;
+}
+.main .slider .slides.slides.current h1{
+    animation: animateheading 2s forwards 1;
+    animation-delay: 0.3s;
+}
+@keyframes animateheading {
+    to{
+        margin-left: 0;
+    }
+}
+.main .slider .slides p{
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-shadow: opx 0.5px 15px rgba(0, 0, 0, 0.5);
+    margin-right: -500%;
+    transition: 0.3s linear;
+}
+.main .slider .slides.slides.current p{
+    animation: animateparagraph 2s forwards 1;
+    animation-delay: 0.3s;
+}
+@keyframes animateparagraph {
+    to{
+        margin-right: 0;
+    }
+}
+
+.main a{
+    z
+}

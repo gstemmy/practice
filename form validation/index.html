@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="img/png" sizes="16x16" href="img/favicon.png">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- icon -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responstyle.css">
+    <title>Login form validation</title>
+</head>
+<body>
+<section id="login-window">
+    <h1>Login</h1>
+    <form id="login">
+        
+            <div class="form-login">
+                <input type="text" required placeholder="Enter Your Username" class="form-input " autocomplete="off" id="username">
+                <p class="error" id="username-error"> * Username is required |</p>
+            </div>
+            <div class="form-login">
+                <input type="password" required placeholder="Enter Your Password" class="form-input " autocomplete="off" id="password">
+                <label class="show">SHOW</label>
+                <p class="error" id="password-error"> * Password is required |</p>
+            </div>
+            <div class="form-check">
+                <input type="checkbox">
+                <span>Remember me</span>
+            </div>
+            <button class="login-btn">Login</button>
+        
+    </form>
+
+    <p>Or Login with</p>
+    <div class="social">
+        <button class="btnnn">
+            <i class='bx bxl-facebook-square'></i> Facebook
+        </button>
+        <button>
+            <i class='bx bxl-google'></i> Google
+        </button>
+    </div>
+    <p class="form-footer">Not a menber ? <a href="#"> sign up</a></p>
+</section>
+
+
+<script src="scripty.js"></script>
+
+
+</body>
+</html>

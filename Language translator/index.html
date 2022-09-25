@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <title>Language Translator | CodingNepal</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="wrapper">
+        <div class="text-input">
+            <textarea placeholder="Enter text" class="from-text"></textarea>
+            <textarea placeholder="Translation" class="to-text" readonly disabled></textarea>
+        </div>
+        <ul class="controls">
+            <li class="row from">
+                <div class="icons">
+                    <i class='bx bxl-twitter'></i>
+                    <!-- <i class='bx bxs-volume-up'></i> -->
+                    <i class='bx bxs-copy'></i>
+                </div>
+                <select>
+                    <!-- <option value="en-US">English</option>
+                    <option value="hi-IN">Hindi</option>
+                    <option value="ne-NP">Nepali</option> -->
+                </select>
+            </li>
+            <li class="exchange"> <i class='bx bxl-twitter'></i> <!--<i class='bx bxs-exchange-alt'></i> --></li>
+            <li class="row to">
+                <select>
+                    <!-- <option value="hi-IN">Hindi</option>
+                    <option value="ne-NP">Nepali</option>
+                    <option value="en-US">English</option> -->
+                </select>
+                <div class="icons">
+                    <i class='bx bxl-twitter'></i>
+                    <!-- <i class='bx bxl-volume-up'></i> -->
+                    <i class='bx bxs-copy'></i>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <button>Translate Text</button>
+</div>
+
+
+
+
+<script src="countries.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

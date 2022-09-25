@@ -1,0 +1,217 @@
+@media(max-width: 1115px){
+    /* header .brand-link a{
+        font-size: 18px;
+        line-height: 28px;
+        width: 100px;
+        height: 40px;
+    } */
+    /* header nav .link ul.linkme li.link-brand a{
+        font-size: 10px;
+        line-height: 28px;
+        width: 71px;
+        height: 30px;
+    } */
+    header .brand-1 h2{
+        font-size: 110px;
+        line-height: 110px;
+    }
+    header .brand-1 p{
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 24px;
+        margin: 50px 0px 60px;
+    }
+    header .brand-1 ul li a{
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    /* Features Project */
+    .feature{
+        padding: 80px 0px 30px;
+    }
+    .feature h3, .design h3, .some h3{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .feature h2, .design h2, .some h2{
+        font-size: 45px;
+        line-height: 24px;
+    }
+    .feature .row .more h1{
+        font-size: 70px;
+        line-height: 100px;;
+    }
+    .feature .row .more h4{
+        font-size: 20.2958px;
+    }
+    .feature .row .more p{
+        font-size: 15.5305px;
+        line-height: 18px;
+    }
+    .feature .container a,
+    .design .container a{
+    font-size: 18px;
+    line-height: 20px;
+    }
+
+
+    /* Design */
+    .design{
+        padding: 90px 0px 0px;
+    }
+
+    /* Some Recommendation */
+    .some {
+        padding: 100px 0px 0px;
+    }
+    .some .row .col p{
+        width: 20rem;
+        margin: 30px auto 10px;
+        font-size: 17px;
+        line-height: 18px;
+    }
+    .some .row .col h4{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .some .col1 h1{
+        font-size: 48px;
+        line-height: 26px;
+    }
+    .some .col1 h3{
+        font-size: 18px;
+        line-height: 25px;
+    }
+    /* Contact */
+    .contact-down ol li a{
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+
+
+/* @media(max-width: 1050px){
+
+
+
+} */
+@media(max-width: 990px){ 
+    .container{
+        width: 90%;
+    }
+    /* header .brand-link a{
+        font-size: 12px;
+    } */
+    header .brand-1 h2{
+        font-size: 90px;
+        line-height: 110px;
+    }
+    header .main{
+        padding-left: 30px;
+        gap: 10px;
+    }
+    header .image{
+        height: 650px;
+    }
+    header .image img{
+        height: 650px;
+        width: 350px;
+    }
+
+}
+
+
+@media(max-width: 770px){
+    .container{
+        width: 95%;
+    }
+    header .main{
+        padding-left:0px;
+        width: 95%;
+        margin: auto;
+        display: block;
+    }
+    /* header .brand-link a{
+        font-size: 24px;
+    } */
+    header nav .link ul.linkme li.link-brand a{
+        font-size: 14px;
+    }
+    header .brand-1 h2{
+        font-size: 128px;
+    }
+    header .brand-1 p{
+        font-size: 24px;
+        width: 70%;
+        margin: 70px 0px 80px;
+    }
+    header .brand-1 ul li a{
+        font-size: 24px;
+    }
+    /* header .image{
+        position: absolute;
+        top: 50%;
+        left: 70%;
+        background-color: black;
+    } */
+    
+    header .image img, header .image .icons{
+        display: none;
+    }
+    .circle{
+        top: 0;
+        right: 0;
+        /* transform: translateY(-50%); */
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* Features Project */
+    .feature{
+        padding: 100px 0px 50px;
+    }
+    .feature h3, .design h3, .some h3{
+        font-size: 24px;
+    }
+    .feature h2, .design h2, .some h2{
+        font-size: 57px;
+    }
+    .feature .row .more h1{
+        font-size: 100px;
+    }
+    .feature .row .more h4{
+        font-size: 29.2958px;
+    }
+    .feature .row .more p{
+        font-size: 19.5305px;
+    }
+    .feature .container a,
+    .design .container a{
+        font-size: 24px;
+    }
+    .feature .container .row{
+        display: block;
+    }
+    .feature .row .more{
+        width: 100%;
+    }
+    .feature .row .img{
+       padding: 50px 0px;
+    }
+}
+
+@media(max-width: 480px){
+
+
+}
+
+
+@media(max-width: 310px){
+
+
+}

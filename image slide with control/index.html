@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>image slide with control</title>
+</head>
+<body>
+    <div class="content">
+        <div class="images">
+            <img src="1.jpg" alt="">
+            <img src="2.jpg" alt="">
+            <img src="3.jpg" alt="">
+            <img src="4.jpg" alt="">
+            <img src="6.jpg" alt="">
+        </div>
+        <div class="slide left">
+           <span onclick="side_slide(-1)" class='bx bx-chevron-left'></span>
+        </div>
+        <div class="slide right">
+            <span onclick="side_slide(1)" class='bx bx-chevron-right'></span>
+            <!-- <span><i class='bx bx-chevron-right'></i></span> -->
+        </div>
+        <div class="btn-sliders">
+            <span onclick="btn_slide(1)"></span>
+            <span onclick="btn_slide(2)"></span>
+            <span onclick="btn_slide(3)"></span>
+            <span onclick="btn_slide(4)"></span>
+            <span onclick="btn_slide(5)"></span>
+        </div>
+    </div>
+
+
+    <script>
+        var indexValue = 1;
+        showImage(indexValue);
+        
+        function btn_slide(e){
+            showImage(indexValue = e); 
+        }
+
+        function side_slide(e){
+            showImage(indexValue += e); 
+        }
+
+        function showImage(e){
+            const img = document.querySelectorAll('img');
+            const sliders = document.querySelectorAll('.btn-sliders span');
+    
+                if(e > img.length){
+                    indexValue = 1;
+                }
+                if(e < 1){
+                    indexValue = img.length;
+                }
+                for(i = 0; i < img.length; i++){
+                    img[i].style.display = "none";
+                }
+                for(i = 0; i < sliders.length; i++){
+                    sliders[i].style.background = "rgba(255, 255, 255, 0.1)";
+                }
+                img[indexValue - 1].style.display = "block";
+                sliders[indexValue - 1].style.background = "white";
+
+
+        }
+            
+    </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- icon -->
+     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <p>Friuts Name is : <span  id="txt"></span></p>
+
+
+    <div class="main">
+        <div class="slider" id="slider">
+            <div class="slides current">
+                <h1>Slide One</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi doloribus,
+                </p>
+            </div>
+            <div class="slides">
+                <h1>Slide Twe</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi doloribus,
+                </p>
+            </div>
+            <div class="slides">
+                <h1>Slide Three</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi doloribus,
+                </p>
+            </div>
+            <div class="slides">
+                <h1>Slide Four</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi doloribus,
+                </p>
+            </div>
+            <div class="slides">
+                <h1>Slide Five</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi doloribus,
+                </p>
+            </div>
+        </div>
+        <a class='prev' id="prev"></a>
+        <a class='"next' id="next"></a>
+    </div>
+
+    <script>
+        var slideTxt = ['banana', 'apple', 'grape'];
+        var slideIndex = 0;
+        var slideDuration = 1000;
+
+        function slidefunction(){ 
+            //called function
+            document.getElementById("txt").innerHTML = slideTxt[slideIndex];
+            slideIndex++;
+            if(slideIndex == slideTxt.length){
+                slideIndex = 0;
+            }
+            setTimeout("slidefunction()", slideDuration);
+        }
+        slidefunction(); //calling function
+    </script>
+</body>
+</html>

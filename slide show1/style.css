@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: mediumblue;
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 450px;
+    width: 800px;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, .3);
+    overflow: hidden;
+}
+.images{
+    height: 100%;
+    width: 500%;
+    display: flex;
+}
+.images img{
+    width: 100%;
+    height: 100%;
+}
+.buttons{
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+.buttons a{
+    height: 8px;
+    width: 30px;
+    border: 2px solid white;
+    margin: 0 5px;
+    border-radius: 10px;
+}

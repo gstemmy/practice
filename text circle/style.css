@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+body, .contain{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 2px solid black;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+#text{
+    height: 80px;
+    font-size: 9px;
+    animation: animate 5s linear infinite;
+}
+@keyframes animate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.contain span{
+    position: absolute;
+    transform-origin: 0 40px;
+}

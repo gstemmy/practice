@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background: #4285f4;
+}
+.wrapper{
+    width: 370px;
+    margin: 130px auto 0px;
+}
+.select-btn, .option li{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.select-btn{
+    background: #fff;
+    height: 65px;
+    font-size: 22px;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-radius: 7px;
+}
+.select-btn i{
+    font-size: 13px;
+    transition: transform 0.3s linear;
+}
+.wrapper.active .select-btn i{
+    transform: rotate(-180deg);
+}
+.content{
+    display: none;
+    margin-top: 15px;
+    padding: 20px;
+    border-radius: 7px;
+    background: #fff;
+}
+.wrapper.active .content{
+    display: block;
+}
+.content .search{
+    position: relative;
+}
+.search i{
+    position: absolute;
+    left: 15px;
+    line-height: 53px;
+    color: #999;
+    font-size: 20px;
+}
+.search input{
+    height: 53px;
+    width: 100%;
+    font-size: 17px;
+    outline: none;
+    padding: 0 15px 0px 43px;
+    border: 1px solid #b3b3b3;
+    border-radius: 5px;
+}
+.content .option{
+    margin-top: 10px;
+    max-height: 250px;
+    overflow-y: auto;
+}
+.option::-webkit-scrollbar{
+    width: 7px;
+}
+.option::-webkit-scrollbar-track{
+    background: #f1f1f1;
+    border-radius: 25px;
+}
+.option::-webkit-scrollbar-thumb{
+    background: #ccc;
+    border-radius: 25px;
+}
+.option li{
+    height: 50px;
+    border-radius: 5px;
+    padding: 0 13px;
+    font-size: 21px;
+}
+.option li:hover{
+    background: #f2f2f2;
+
+}
