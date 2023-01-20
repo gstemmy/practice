@@ -6,6 +6,7 @@ const text =document.querySelector(".text p");
         ele[i].style.transform = "rotate("+i+0+"deg)";
 }
 const bright = document.querySelector('.bright');
+const textbrigh = document.querySelector('.textbrigh');
 const body = document.querySelector('body');
 const header = document.querySelector('nav');
 const about = document.querySelector('.about');
@@ -18,6 +19,7 @@ const contactDown = document.querySelector('.contact-down');
 
 bright.addEventListener("click", () => {
     bright.classList.toggle('active');
+    textbrigh.classList.toggle('active');
     body.classList.toggle('active');
     header.classList.toggle('active');
     about.classList.toggle('active');
@@ -26,6 +28,19 @@ bright.addEventListener("click", () => {
     school.classList.toggle('active');
     info.classList.toggle('active');
     contactDown.classList.toggle('active');
+});
+textbrigh.addEventListener("click", () => {
+    bright.classList.toggle('active');
+    textbrigh.classList.toggle('active');
+    body.classList.toggle('active');
+    header.classList.toggle('active');
+    about.classList.toggle('active');
+    core.classList.toggle('active');
+    work.classList.toggle('active');
+    school.classList.toggle('active');
+    info.classList.toggle('active');
+    contactDown.classList.toggle('active');
+    
 });
 
 
@@ -68,4 +83,13 @@ for(var i = 1; i<ele5.length; i++){
     // ele[i].style.transform = "rotate("+i+6+"deg)";
 };
 
+
+
+const harborger = document.querySelector(".harborger");
+const link = document.querySelector(".link");
+
+harborger.addEventListener("click", () => {
+    harborger.classList.toggle("active");
+    link.classList.toggle("active");
+})
 

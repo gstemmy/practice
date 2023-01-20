@@ -20,8 +20,24 @@
     scroll-behavior: smooth;
 }
 body{
-    
     transition: all 0.3s ease-in-out;
+}
+.harborger{
+    display: none;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    z-index: 100;
+}
+.harborger .bar{
+    transition: all 0.4s ease-in-out;
+    width: 25px;
+    height: 3px;
+    margin: 3px auto;
+    background: #000000;
+}
+.harborger .bar:nth-child(3){
+    margin-right: 0;
+    width: 14px;
 }
 .container{
     width: 80%;
@@ -293,7 +309,15 @@ header .image .circle .text p{
     transform-origin: 0 100px;
     transition: all 0.3s ease-in-out;
 }
-
+header .main.active .image .circle .text p,
+header .main.active .brand .main-brand .link ul li a,
+header .main.active .brand-1 p,
+header .main.active .brand-1 h2,
+header .main.active .brand-1 ul li a,
+header .main.active .brand a{
+    transition: all 0.3s ease-in-out;
+    color: #FAFCFD;
+}
 /* Features Project */
 .feature{
     padding: 100px 0px 50px;
@@ -375,9 +399,25 @@ header .image .circle .text p{
     gap: 40px;
 }
 
+
+.feature.active .container .row .more,
+.feature.active .container .row .more p,
+.feature.active .container .row .more h4,
+.feature.active .container .link-feat a,
+.feature.active .container h2,
+.feature.active .container h3{
+    transition: all 0.3s ease-in-out;
+    color: #FAFCFD;
+}
+.feature.active .container .row .more h1{
+    transition: all 0.3s ease-in-out;
+    color: rgba(249, 251, 254, 0.05);
+}
+
 /* Design */
 .design{
-    padding:120px 0px 0px;
+    padding: 30px 0px 0px;
+    /* background-color: #321201; */
 }
 .design .img-link{
     margin: 40px 0px 50px;
@@ -394,14 +434,24 @@ header .image .circle .text p{
     background: #F5EFFB;
     padding: 40px 100px;
 }
-
+.design.active .container h2,
+.design.active .container h3,
+.design.active .container .link-design a{
+    transition: all 0.3s ease-in-out;
+    color: #FAFCFD;
+}
 /* Some Recommendation */
 .some {
     padding:150px 0px 0px;
 }
 .some .row{
     padding: 20px 0px 40px;
+    /* display: flex; */
 }
+.some .row .col{
+    width: 100%;
+}
+
 .some .row .col p{
     width: 25rem;
     margin: 30px auto 10px;
@@ -446,7 +496,18 @@ header .image .circle .text p{
     color: #FC884B;
     transition: all 0.3s ease-in-out;
 }
-
+.some.active .container h2,
+.some.active .container h3,
+.some.active .container .row .col p,
+.some.active .container .row .col h4,
+.some.active .container .col1 h1{
+    transition: all 0.3s ease-in-out;
+    color: #FAFCFD;
+}
+.some.active .container .col1 h3{
+    color: #FC884B;
+    transition: all 0.3s ease-in-out;
+}
 /* Contact */
 .contact-down{
     padding: 20px 10px;
@@ -464,7 +525,10 @@ header .image .circle .text p{
     color: #2B3A41;
     transition: all 0.3s ease-in-out;
 }
-
+.contact-down.active .container li a{
+    transition: all 0.3s ease-in-out;
+    color: #FAFCFD;
+}
 
 
 /* js */
@@ -480,40 +544,7 @@ body.active{
     display: block;
     transition: all 0.3s ease-in-out;
 }
-.feature .container .more .feature01.active,
-.feature .container .more .feature02.active{
-    transition: all 0.3s ease-in-out;
-    color: rgba(249, 251, 254, 0.05);
-}
-.feature .container .more .feature001.active,
-.feature .container .more .feature002.active,
-.feature .container .more h4.feature0001.active,
-.feature .container .more h4.feature0002.active,
-.feature .container .link-feat a.link-feats.active,
-.design .container .design01.active, .design .container .design02.active,
-.some .container .some01.active, .some .container .row .col .some02.active,
-.some .container .row .col .some03.active,
-.some .container .row .col .some04.active,
-.some .container .row .col .some05.active,
-.some .container .col1 .somes.active,
-.contact-down .container ol li a.contact-link01.active,
-.contact-down .container ol li a.contact-link02.active,
-.contact-down .container ol li a.contact-link03.active,
-.contact-down .container ol li a.contact-link04.active,
-.contact-down .container ol li a.contact-link05.active,
-header .image .circle .text p.active,
-header .brand-1 p.main01.active,
-header .main .brand .logo.active,
-header .main .brand .brand-1 ul li .linkedin.active,
-header .brand-1 ul li .twitter.active,
-header .brand-1 ul li .instagram.active,
-header .main .brand .main-brand .link ul li .link-brand-01.active,
-header .main .brand .main-brand .link ul li .link-brand-02.active,
-header .main .brand .main-brand .link ul li .link-brand-03.active,
-header .brand-1 h2.active, .feature .cases.active{
-    transition: all 0.3s ease-in-out;
-    color: #FAFCFD;
-}
+
 header .brand-1 h2 span.active{
     color: #FC884B;
 }
@@ -521,6 +552,30 @@ header .brand-1 h2 span.active{
     transition: all 0.3s ease-in-out;
     background: #FAFCFD;
 }
+.textbrigh{
+    display: none;
+    position: fixed;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    top: 20%;
+    right: 10%;
+    background-color: #321201;
+    transition: all 0.3s ease-in-out;
+    z-index: 105;
+}
+.textbrigh.active{
+    transition: all 0.3s ease-in-out;
+    background: #FAFCFD;
+}
+.textbrigh img{
+    width: 60%;
+}
 header .image .bright.active{
     left: -7%;
+}
+header{
+    position: relative;
+    overflow: hidden;
 }
